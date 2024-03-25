@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projet Next.js avec Cypress
 
-## Getting Started
+Ce projet est une application Next.js qui inclut une page de profil utilisateur. Les utilisateurs peuvent voir leurs informations, les éditer et sauvegarder les modifications. Cypress est utilisé pour écrire et exécuter des tests automatisés pour s'assurer que l'application fonctionne comme prévu.
 
-First, run the development server:
+## Caractéristiques
 
-```bash
+- Affichage des informations de profil utilisateur
+- Édition des informations de profil utilisateur
+- Validation du formulaire d'édition
+- Tests automatisés avec Cypress
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir Node.js installé sur votre système. Ce projet a été développé avec Node.js version 14.x.
+
+## Installation
+
+Pour installer les dépendances nécessaires, exécutez le suivant dans votre terminal à la racine du projet :
+
+bash
+npm install
+
+
+Ou, si vous utilisez Yarn :
+
+bash
+yarn install
+
+
+## Démarrer le Projet
+
+Pour démarrer l'application en mode de développement, exécutez :
+
+bash
 npm run dev
-# or
+
+
+Ou avec Yarn :
+
+bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Ouvrez [http://localhost:3000](http://localhost:3000) pour voir l'application dans le navigateur.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Exécuter les Tests avec Cypress
 
-## Learn More
+Pour exécuter les tests Cypress en mode interactif :
 
-To learn more about Next.js, take a look at the following resources:
+bash
+npx cypress open
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pour exécuter les tests en mode headless (utile pour CI/CD) :
 
-## Deploy on Vercel
+bash
+npx cypress run
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribuer
+
+Pour contribuer à ce projet, veuillez créer une branche pour chaque fonctionnalité ou correction, puis soumettez une pull request vers la branche principale.
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+
+---
+
+Les résultats des tests se sont attachés ci-dessous :
+![alt text](<public/assets/Capture d'écran 2024-03-25 231804.png>)
